@@ -94,14 +94,19 @@ Du lærer at sende data til en komponent med props, og hvordan du kan modtage og
 **2. Skriv en kommentar om forskellen på de tre metoder.**
 Hvilken metode synes du er mest overskuelig? Hvorfor?
 
----
+--- Jeg synes den første er mere overskuelig, da man manuelt bare kan gå ind og vælge/fravælge den nye info man vil have, 
+
+Nr 2 Her samler man det hele under et større umbrellaterm, og vælger ud, det virker smart
+Men jeg kan ikke se hvordan det er anderledes end bare at tage det direkte fra json filen
+
+nr 3, Her sørger man bare for at det konstanten indeholder det man skal bruge, så du kun skal ændre det ét sted for at ændre på den viste data. hvis man skulle skrive det fra bundet, vil jeg nok foretrække at sende hele user-objektet som én prop.(3)
 
 ### Step 1.1: Vis alle props fra user-objektet
 
 - Udvid `User`-komponenten, så den viser alle felter: id, image, mail, name, title.
 - Skriv koden, så du kan se alle værdier på skærmen.
 
----
+--- done
 
 ### Step 1.2: Styling
 
@@ -109,13 +114,13 @@ Hvilken metode synes du er mest overskuelig? Hvorfor?
 - Vis de andre felter som tekst.
 - Gør det pænt og overskueligt – brug evt. CSS-klasser.
 
----
+--- Det her er vel gjort på forhånd?
 
 ### Step 1.4: Kommentarer
 
 - Skriv en kort kommentar over funktionshovedet, der forklarer hvad destructuring `{}` gør.
 
----
+--- done?
 
 ### Step 1.5: Modtag hele user-objektet som prop
 
@@ -138,7 +143,7 @@ Hvilken metode synes du er mest overskuelig? Hvorfor?
   ```
 - Vælg den metode du synes er mest overskuelig - test gerne begge metoder!
 
----
+--- 
 
 ## Opgave 2: State – Dynamiske data og interaktivitet
 

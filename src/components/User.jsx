@@ -11,7 +11,6 @@ function handleLike() {
   }
 
   
-    
  return (
     <div className="user-card">
       <img src={image} />

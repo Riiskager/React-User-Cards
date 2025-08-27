@@ -3,6 +3,7 @@ import User from "./components/User";
 
 function App() {
   const [users, setUsers] = useState([]);
+  const[loading, setLoading] = useState(true)
 
   useEffect(() => {
     async function fetchUsers() {
@@ -10,10 +11,23 @@ function App() {
       const data = await response.json();
 
       setUsers(data);
+
+      setLoading(false);
     }
     fetchUsers();
   }, []);
 
+  useEffect(() => {
+    if (users.lenght === 0) alert("Ingen brugere!");
+  }, [users]);
+
+ if (loading){
+  return(
+    <div className="page">
+        <p>Loading...</p>
+      </div>
+  );
+ }
   return (
     <div className="page">
       <h1>Users</h1>
